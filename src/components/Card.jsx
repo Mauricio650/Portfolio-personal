@@ -14,7 +14,7 @@ export function CardProject ({pathImg,title,text, linkWeb, linkRepo, arrSvg = []
                 
                 <article className="py-2 flex justify-items-start items-center gap-1">
                     {
-                        arrSvg.map(svg => <img className="w-5 hover:scale-[1.2]" src={`/public/svg/${svg}`} alt="" /> )
+                        arrSvg.map(svg => <img className="w-5 hover:scale-[1.2]" src={`svg/${svg}`} alt="" /> )
                     }
                 </article>
                 <div class="flex justify-between orbitron-1">
