@@ -40,10 +40,6 @@ export function HumanModel() {
             <Suspense fallback={null}>
                 <Human />
             </Suspense>
-            <OrbitControls 
-                enableZoom={false}
-                enablePan={false} 
-            />
         </Canvas>
     );
 }

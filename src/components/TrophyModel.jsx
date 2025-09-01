@@ -48,10 +48,6 @@ export function TrophyModel() {
             <Suspense fallback={null}>
                 <Trophy />
             </Suspense>
-            <OrbitControls 
-                enableZoom={false}
-                enablePan={false} 
-            />
         </Canvas>
     );
 }
