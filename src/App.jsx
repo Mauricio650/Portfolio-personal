@@ -1,4 +1,5 @@
 import './App.css'
+import { Analytics } from "@vercel/analytics/react"
 import { AboutMe } from './components/AboutMe'
 import { AboutStudies } from './components/AboutStudies'
 import { Banner } from './components/Banner'
@@ -17,6 +18,7 @@ export function App() {
 
   return (
     <BackGround>
+      <Analytics/>
       <ContainerSvgAnimations></ContainerSvgAnimations>
       <section className='relative w-full flex justify-center items-center'>
         <Header></Header>

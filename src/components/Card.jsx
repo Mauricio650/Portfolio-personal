@@ -2,7 +2,7 @@ export function CardProject ({pathImg,title,text, linkWeb, linkRepo, arrSvg = []
     return (
         <article class="bg-black flex flex-col justify-between border border-yellow-300 rounded-xl shadow-lg p-4 w-xs lg:w-80 hover:scale-105 transition-transform duration-300">
   
-                <img src={pathImg} alt={`${title} Screenshot`} class="rounded-lg mb-3"/>
+                <img src={pathImg} alt={`img of my project ${title}`} class="rounded-lg mb-3"/>
                 
                 
                 <h2 class="text-red-800 pixelify-sans-3 text-lg mb-2">{title}</h2>
@@ -14,7 +14,7 @@ export function CardProject ({pathImg,title,text, linkWeb, linkRepo, arrSvg = []
                 
                 <article className="py-2 flex justify-items-start items-center gap-1">
                     {
-                        arrSvg.map(svg => <img className="w-5 hover:scale-[1.2]" src={`svg/${svg}`} alt="" /> )
+                        arrSvg.map((svg,i) => <img key={i} className="w-5 hover:scale-[1.2]" src={`svg/${svg}`} alt="" /> )
                     }
                 </article>
                 <div class="flex justify-between orbitron-1">
