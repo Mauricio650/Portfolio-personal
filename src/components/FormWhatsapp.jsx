@@ -1,6 +1,8 @@
+import { useId } from "react";
 import { useState } from "react";
 
 export default function ContactFormWhatsApp() {
+  const messageWID = useId()
   const [message, setMessage] = useState("");
 
   const sendWhatsApp = () => {
@@ -16,8 +18,9 @@ export default function ContactFormWhatsApp() {
           📟 WhatsApp
         </h2>
 
-        <label className="block mb-3 orbitron-1 text-sm">Mensaje</label>
+        <label htmlFor={messageWID} className="block mb-3 orbitron-1 text-sm">Mensaje</label>
         <textarea
+          id={messageWID}
           rows="4"
           value={message}
           onChange={(e) => setMessage(e.target.value)}

@@ -6,19 +6,18 @@ import { ContainerSvgAnimations } from './components/ContainerSvg'
 import ContactFormEmail from './components/FormEmail'
 import ContactFormWhatsApp from './components/FormWhatsapp'
 import { Header } from './components/Header'
-
 import { Introduce } from './components/Introduce'
 import { ProjectBanner } from './components/ProjectBanner'
 import { Projects } from './components/Projects'
 import { RubikModel } from './components/RubikModel'
-import { TalkToMe } from './components/TalkToMe'
 import { TechsContainers } from './components/TechsContainer'
-import { BackGround } from './layout/BackGround'
+import { BackGround } from './bg/BackGround'
 
 export function App() {
 
   return (
     <BackGround>
+      <ContainerSvgAnimations></ContainerSvgAnimations>
       <section className='relative w-full flex justify-center items-center'>
         <Header></Header>
       </section>

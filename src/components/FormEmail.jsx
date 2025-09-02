@@ -1,4 +1,9 @@
+import { useId } from "react";
+
 export default function ContactFormEmail() {
+    const nameID = useId()
+    const emailID = useId()
+    const messageID = useId()
     return (
       <section className="w-full flex justify-center items-center p-6">
         <form
@@ -10,24 +15,27 @@ export default function ContactFormEmail() {
             ✉️ Email
           </h2>
   
-          <label className="block mb-3 orbitron-1 text-sm">Nombre</label>
+          <label htmlFor={nameID} className="block mb-3 orbitron-1 text-sm">Nombre</label>
           <input
+            id={nameID}
             type="text"
             name="name"
             required
             className="w-full p-2 mb-4 bg-black border-2 border-green-400 text-green-300 font-mono focus:outline-none focus:border-pink-500"
           />
   
-          <label className="block mb-3 orbitron-1 text-sm">Email</label>
+          <label htmlFor={emailID} className="block mb-3 orbitron-1 text-sm">Email</label>
           <input
+            id={emailID}
             type="email"
             name="email"
             required
             className="w-full p-2 mb-4 bg-black border-2 border-green-400 text-green-300 font-mono focus:outline-none focus:border-pink-500"
           />
   
-          <label className="block mb-3 orbitron-1 text-sm">Mensaje</label>
+          <label htmlFor={messageID} className="block mb-3 orbitron-1 text-sm">Mensaje</label>
           <textarea
+            id={messageID}
             name="message"
             rows="4"
             required
