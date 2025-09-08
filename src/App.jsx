@@ -37,7 +37,7 @@ export function App() {
     </div>
 
 
-    <div className='w-full  p-2 sm:p-20 flex justify-center items-center '>
+    <div className='w-full p-5 flex justify-center items-center '>
       <section className='w-full h-full flex flex-col justify-evenly items-center'>
             <Banner text={'Acerca de mi'}></Banner>
           <AboutMe></AboutMe>
@@ -45,7 +45,7 @@ export function App() {
       </section>
     </div>
 
-    <div className='w-full mt-8  p-2 sm:p-20 flex justify-center items-center '>
+    <div className='w-full p-5  flex justify-center items-center '>
       <section className='w-full h-full flex flex-col justify-evenly items-center'>
             <ProjectBanner></ProjectBanner>
           <Projects></Projects>
@@ -53,7 +53,7 @@ export function App() {
     </div>
 
 
-    <div className='w-full mt-8  p-2 sm:p-20 flex justify-center items-center '>
+    <div className='w-full p-5  flex justify-center items-center '>
       <section className='w-full h-full flex flex-col justify-evenly items-center'>
             <Banner text={'Contáctame'}></Banner>
             <section className='flex flex-col justify-between items-center gap-2 p-3'>
